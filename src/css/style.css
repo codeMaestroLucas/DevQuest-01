@@ -1,0 +1,121 @@
+html {
+    background: url(../images/bg-repeat.jpg) center repeat-x;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+ 
+ main {
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ main > * {
+    max-width: 340px;
+    max-height: 378px;
+ }
+
+ .apresentacao {
+    margin-right: 50px;
+ }
+
+.apresentacao .tit {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    
+    margin-bottom: 11px;
+
+}
+
+.apresentacao .desc {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.div-form {
+    background-color: white;
+    padding: 20px;
+}
+
+.div-form .formulario {
+    max-height: 450px;
+
+}
+
+.div-form .formulario > * {
+    margin-bottom: 15px;
+}
+
+.div-form .formulario input, textarea {
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #FFF;
+
+    padding-top: 6px;
+    padding-left: 7px;
+}
+
+.div-form .formulario input::placeholder, textarea::placeholder {
+    color: #A8A8A8;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.div-form .formulario textarea {
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.div-form .camposObrigatorios {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.div-form .enviar {
+    width: 298.013px;
+    height: 41.129px;
+    background-color: #3CCC87;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    border-radius: 6px;
+    border: none;
+}
+
+.div-form .formulario .obrigatorio{
+    display: none;
+    color: #F52E2E;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+/* ------------ ATIVOS ------------- */
+.div-form .formulario .obrigatorio.visivel{
+    display: block;
+    margin-left: 3px;
+}
+
+.div-form .formulario .vazio {
+    margin-bottom: 0;
+    border: 2px solid #F52E2E;
+}
+
+.div-form .formulario .preenchido {
+    margin-bottom: 0;
+    border: 2px solid #3CCC87;
+    margin-bottom: 15px;
+}

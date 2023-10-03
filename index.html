@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Ex 07 - Formulário com Validação</title>
+</head>
+<body>
+    <main>
+        <div class="apresentacao">
+            <h1 class="tit">FICOU COM DÚVIDA? <br>
+            NOS MANDE UMA MENSAGEM!</h1>
+            <p class="desc">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <div class="div-form">
+            <form action="index.html" method="get" class="formulario">
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo *">
+                <label for="text" class="obrigatorio">campo obrigatório</label>
+                
+                <input type="text" name="email" id="email" placeholder="Email *">
+                <label for="email" class="obrigatorio">campo obrigatório</label>
+                
+                <input type="number" name="telefone" id="telefone" placeholder="Telefone *">
+                <label for="telefone" class="obrigatorio">campo obrigatório</label>
+                
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+                <label for="textarea" class="obrigatorio">campo obrigatório</label>
+                
+            </form>
+            <p class="camposObrigatorios">campos obrigatórios * </p>
+            <button type="submit" class="enviar">Enviar</button>
+        </div>
+    </main>
+
+
+    <script src="src/js/index.js" type="text/javascript"></script>
+</body>
+</html>
